@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Attendance System</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Rahul</td>
+                <td>
+                    <input type="radio" name="s1" onclick="markAttendance(1,'Present')"> Present
+                    <input type="radio" name="s1" onclick="markAttendance(1,'Absent')"> Absent
+                </td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Priya</td>
+                <td>
+                    <input type="radio" name="s2" onclick="markAttendance(2,'Present')"> Present
+                    <input type="radio" name="s2" onclick="markAttendance(2,'Absent')"> Absent
+                </td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Amit</td>
+                <td>
+                    <input type="radio" name="s3" onclick="markAttendance(3,'Present')"> Present
+                    <input type="radio" name="s3" onclick="markAttendance(3,'Absent')"> Absent
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="submitAttendance()">Submit Attendance</button>
+
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
